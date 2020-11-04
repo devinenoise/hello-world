@@ -1,0 +1,2 @@
+C:\Users\USERFS\source\repos\Hello World C++\Debug\Hello World C++.exe
+C:\Users\USERFS\source\repos\Hello World C++\Debug\Hello World C++.pdb
