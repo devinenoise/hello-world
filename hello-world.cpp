@@ -3,23 +3,27 @@
 
 #include <iostream>
 #include <string>
+using namespace std;
 
 int numGroup() {
     return 42;
 }
 
-std::string helloWorld[] = { "Hello World!\n" };
+string helloWorld() {
+    return "Hello World!\n"; 
+}
 
 
 int main()
 {
-    std::string aStringInsideMain = helloWorld[0];
+   //string aStringInsideMain = helloWorld;
 
-    std::cout << aStringInsideMain;
-
+   cout << helloWorld() << endl;
+     
 
     // pause the string so the terminal window remains open
     system("pause>0");
     
 }
+
 
