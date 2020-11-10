@@ -6,7 +6,7 @@
 using namespace std;
 
 
-//int numGroup[5] = { 1, 3, 5, 7, 9 };
+int numGroup[5] = { 1, 3, 5, 7, 9 };
 
 string helloWorld() {
     return "Hello World!\n";
@@ -25,5 +25,7 @@ int main() {
 
    cout << helloWorld(); 
 
-   numberArray(); 
+   numberArray();
+
+
 }
