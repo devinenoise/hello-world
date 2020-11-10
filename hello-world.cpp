@@ -5,26 +5,21 @@
 #include <string>
 using namespace std;
 
-
-
-string helloWorld() {
-    return "Hello World!\n"; 
-}
-
 // defining the number array
 int numGroup[5] = { 1, 3, 5, 7, 9 };
 
-// defines function to loop through numGroup
-void numberArray() {
-    for (int i = 0; i < 5; i++) {
-        cout << numGroup[i] << endl;
-    }
-}
+//declare helloWorld function
+string helloWorld();
+
+// declares numberArray function
+void numberArray();
 
 int main() {
 
-   cout << helloWorld() << endl;
+   cout << helloWorld(); 
 
+   
+   
    numberArray();
 
    // pause the string so the terminal window remains open
@@ -32,4 +27,14 @@ int main() {
     
 }
 
+string helloWorld() {
+    return "Hello World!\n";
+}
 
+// defines function to loop through numGroup
+
+void numberArray() {
+    for (int i = 0; i < 5; i++) {
+        cout << numGroup[i] << endl;
+    }
+}
