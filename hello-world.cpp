@@ -5,21 +5,22 @@
 #include <string>
 using namespace std;
 
-int numGroup() {
-    return 42;
-}
+
 
 string helloWorld() {
     return "Hello World!\n"; 
 }
 
+int numGroup[5] = { 1, 3, 5, 7, 9 };
 
-int main()
-{
-   //string aStringInsideMain = helloWorld;
+
+int main() {
 
    cout << helloWorld() << endl;
-     
+
+   for (int i = 0; i < 5; i++) {
+       cout << numGroup[i] << endl;
+   }
 
     // pause the string so the terminal window remains open
     system("pause>0");
