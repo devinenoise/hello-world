@@ -2,15 +2,24 @@
 //
 
 #include <iostream>
+#include <string>
 
-int numGroup() {}
+int numGroup() {
+    return 42;
+}
+
+std::string helloWorld[] = { "Hello World!\n" };
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::string aStringInsideMain = helloWorld[0];
+
+    std::cout << aStringInsideMain;
+
 
     // pause the string so the terminal window remains open
     system("pause>0");
-    return 0;
+    
 }
 
