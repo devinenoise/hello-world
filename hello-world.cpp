@@ -6,35 +6,24 @@
 using namespace std;
 
 
-int numGroup[5] = { 1, 3, 5, 7, 9 };
+//int numGroup[5] = { 1, 3, 5, 7, 9 };
 
-//declare helloWorld function
-string helloWorld();
+string helloWorld() {
+    return "Hello World!\n";
+}
 
-// declares numberArray function
-void numberArray();
+
+void numberArray() {
+    for (int i = 0; i < 5; i++) {
+        cout << numGroup[i] << endl;
+    }
+}
+
+
 
 int main() {
 
    cout << helloWorld(); 
 
-     
-   numberArray();
-
-   // pause the string so the terminal window remains open
-   system("pause>0");
-    
-}
-
-
-//define helloWorld()
-string helloWorld() {
-    return "Hello World!\n";
-}
-
-// define numberArray() to loop through numGroup
-void numberArray() {
-    for (int i = 0; i < 5; i++) {
-        cout << numGroup[i] << endl;
-    }
+   numberArray(); 
 }
