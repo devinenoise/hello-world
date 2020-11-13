@@ -3,7 +3,7 @@
 //Work In Progress
 Clone the repo into your local directory.
 cd into the directory if necessary.
-Compile the hello-world.cpp file using g++
+Compile the hello-world.cpp file using `g++ hello-world.cpp`
 Expected output: "Hello World!"
 
 ## Functions
@@ -33,3 +33,23 @@ To call a function, if the function has a void return type, you simply need to p
 If the function returns a value, then you will need to create a variable in the context you're calling the function from to represent the return value of the function. For example, if a function called `radNess` returns an integer, and you call `radNess()` from `main()`, you'll need to create a new variable `int newRadNess = radNess()` to invoke/call the function with the proper return type.
 
 A function signature defines the "contract" of the function, including return types, parameters, and the data types of our parameters.
+
+## Classes
+
+Classes are templates. An object, or an instance, is a concrete example of that template. An example of a class would be Animal and its objects would be dog, cow, monkey, etc. Properties of a class are private by default. To make them accessible add `public:` before the properties.
+
+### Constructor
+
+A constructor is a method that is called automatically when you create an instance of a class. When you create an object, a constructor of that class is called.
+
+### Polymorphism
+
+Polymorphism allows a created object to have multiple forms. Protected is an access modifier that allows derived classes to use properties from the base class. Polymorphism is considered as one of the important features of Object Oriented Programming.
+
+### Encapsulation
+
+Encapsulation makes the properties of a class private and allows them to be modified through public methods.
+
+### Inheritance
+
+Inheritance allows one class to use properties from another class. The inherited class is called the _derived_ class and the inheritor is called the _base_ class.

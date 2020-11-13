@@ -9,14 +9,17 @@ public:
         return "Hello World!\n";
     }
     int* numberArray() {
-        int numGroup[5] = { 1, 3, 5, 7, 9 };
+        int numGroup[] = { 1, 3, 5, 7, 9 };
         int length = sizeof(numGroup) / sizeof(numGroup[0]);
         for (int i = 0; i < length; i++) {
-            return numGroup;
             cout << numGroup[i] << endl;
         }
+            return 0;
     }
 };
+
+
+//int numbers[5] = { 5, 4, -2, 29, 6 };
 
 
 
@@ -27,7 +30,8 @@ int main() {
 
    cout << HelloWorld.helloWorld(); 
 
-   HelloWorld.numberArray(&numGroup);
+   HelloWorld.numberArray();
 
+   return 0;
 
 }
