@@ -1,40 +1,33 @@
-// Hello World C++.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 #include <string>
 using namespace std;
 
 
-int numGroup[5] = { 1, 3, 5, 7, 9 };
+class HelloWorldClass {
+public:
+    string helloWorld() {
+        return "Hello World!\n";
+    }
+    int* numberArray() {
+        int numGroup[5] = { 1, 3, 5, 7, 9 };
+        int length = sizeof(numGroup) / sizeof(numGroup[0]);
+        for (int i = 0; i < length; i++) {
+            return numGroup;
+            cout << numGroup[i] << endl;
+        }
+    }
+};
 
-//declare helloWorld function
-string helloWorld();
 
-// declares numberArray function
-void numberArray();
+
 
 int main() {
 
-   cout << helloWorld(); 
+   HelloWorldClass HelloWorld;
 
-     
-   numberArray();
+   cout << HelloWorld.helloWorld(); 
 
-   // pause the string so the terminal window remains open
-   system("pause>0");
-    
-}
+   HelloWorld.numberArray(&numGroup);
 
 
-//define helloWorld()
-string helloWorld() {
-    return "Hello World!\n";
-}
-
-// define numberArray() to loop through numGroup
-void numberArray() {
-    for (int i = 0; i < 5; i++) {
-        cout << numGroup[i] << endl;
-    }
 }
