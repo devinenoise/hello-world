@@ -1,10 +1,12 @@
 ## Runbook
 
-//Work In Progress
 Clone the repo into your local directory.
-cd into the directory if necessary.
+
+`cd` into the directory if necessary.
+
 Compile the hello-world.cpp file using `g++ hello-world.cpp`
-Expected output: "Hello World!"
+
+The program will ask you to enter a length for your array and then input the individual elements of that array.  After you have reached your maximum inputs, it will display the array.
 
 ## Functions
 
@@ -41,6 +43,13 @@ Classes are templates. An object, or an instance, is a concrete example of that 
 ### Constructor
 
 A constructor is a method that is called automatically when you create an instance of a class. When you create an object, a constructor of that class is called.
+
+When you create a new object, memory is allocated using operator new function and then the constructor is invoked to initialize the memory. Here, The new operator does both the allocation and the initialization, where as the operator new only does the allocation.
+
+The new operator is an operator which denotes a request for memory allocation on the Heap. If sufficient memory is available, new operator initializes the memory and returns the address of the newly allocated and initialized memory to the pointer variable.
+## Destructor
+
+A destructor is a member function which destructs or deletes an object when a function, program, delete operator, or a block containing local variables ends.  Destructors have the same name as the class preceded by a tilde.  They also don't take any arguments or return anything.
 
 ### Polymorphism
 
