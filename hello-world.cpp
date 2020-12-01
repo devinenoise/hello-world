@@ -5,32 +5,40 @@ using namespace std;
 
 class HelloWorldClass {
 public:
-    string helloWorld() {
-        return "Hello World!\n";
-    }
-    int* numberArray() {
-        int numGroup[] = { 1, 3, 5, 7, 9 };
-        int length = sizeof(numGroup) / sizeof(numGroup[0]);
-        for (int i = 0; i < length; i++) {
-            cout << numGroup[i] << endl;
+    int randomArray() {
+        int* array;
+        int i, n;
+
+        cout << "How long should the magic array be?";
+        cin >> n;
+
+        array = new int(n);
+
+        cout <<"Input your "<<n<<" elements for the array"<<endl;
+        for (i = 0; i < n; i++)
+        {
+            cout << "Input element " << i + 1 <<": ";
+            cin >> array[i];
         }
+
+        cout << "Entered elements are: ";
+        for (i = 0; i < n; i++) {
+            cout << array[i] << " ";
+        }
+        cout << endl;
+        delete(array);
+
             return 0;
+        ~randomArray();
     }
 };
-
-
-//int numbers[5] = { 5, 4, -2, 29, 6 };
-
-
 
 
 int main() {
 
    HelloWorldClass HelloWorld;
 
-   cout << HelloWorld.helloWorld(); 
-
-   HelloWorld.numberArray();
+   HelloWorld.randomArray();
 
    return 0;
 
